@@ -1,7 +1,10 @@
-function App() {
+function App(props) {
+  const currDate = new Date();
   return (
-      <h1>Hello World</h1>
+    <div>
+      <h1>Hello, world!</h1>
+      <h2>The time now is {currDate.toLocaleTimeString()}.</h2>
+    </div>
   );
 }
-
 export default App;
